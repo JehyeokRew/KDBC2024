@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+    <title>KDBC 2024</title>
+    <!-- Bootstrap Core CSS -->
+    <link href="./bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link href="./bootstrap.css" rel="stylesheet">
+    <!-- DataTables CSS -->
+    <link href="./dataTables.bootstrap.css" rel="stylesheet">
+    <!-- MetisMenu CSS -->
+    <link href="./metisMenu.min.css" rel="stylesheet">
+    <!-- Timeline CSS -->
+    <link href="./timeline.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="./sb-admin-2.css" rel="stylesheet">
+    <link href="./owl.carousel.css" rel="stylesheet">
+    <link href="./owl.theme.default.min.css" rel="stylesheet">
+    <link href="./custom.css" rel="stylesheet">
+    <!-- Custom Fonts -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <script src="./jquery.js"></script>
+    <script src="./jquery.validate.js"></script>
+    <script src="./custom.js"></script>
+</head>
+
+<body>
+    <script src="less.min.js" type="text/javascript"></script>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="bootstrap.min.js"></script>
+    <!-- Metis Menu Plugin JavaScript -->
+    <script src="metisMenu.min.js"></script>
+    <!-- Morris Charts JavaScript -->
+    <script src="raphael-min.js"></script>
+    <!-- Custom Theme JavaScript -->
+    <script src="sb-admin-2.js"></script>
+    <script src="owl.carousel.min.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function() {
+        $("#owl-demo").owlCarousel({
+            loop: true,
+            margin: 10,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                1000: {
+                    items: 3
+                },
+                600: {
+                    items: 2
+                }
+            },
+            responsiveClass: true
+        });
+    });
+    </script>
+    <div id="wrapper">
+        <!-- Navigation -->
+        <nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0; ">
+            <div class="navbar-header" style="height: 110px;">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html"><img src="images/logo.png"></a>
+            </div>
+            <!-- /.navbar-header -->
+            <div class="navbar-default sidebar" role="navigation">
+                <div class="navbar-collapse collapse" id="myNavbar">
+                    <ul class="nav" id="side-menu">
+                        <li style="border-top:1px solid #e7e7e7;"> <a href="index.html"><i class="fa fa-home fa-fw"></i> 홈</a> </li>
+                        <li> <a href="callForPapers.html"><i class="fa fa-file-text fa-fw"></i> 논문 모집</a> </li>
+                        <li> <a href="importantDates.html"><i class="fa fa-calendar fa-fw"></i> 주요 일정</a> </li>
+                        <li> <a href="organization.html"><i class="fa fa-group fa-fw"></i> 학술대회 위원회</a> </li>
+                        <li> <a href="keynote.html"><i class="fa fa-microphone fa-fw"></i> 기조 연설</a> </li>
+                        <li> <a href="invitedTalk.html"><i class="fa fa-microphone fa-fw"></i> 초청 강연</a> </li>
+                        <li> <a href="program.html"><i class="fa fa-check-square-o fa-fw"></i> 프로그램</a> </li>
+                        <li> <a href="proceedings.html"><i class="fa fa-check-square-o fa-fw"></i> 리플렛/프로시딩</a> </li>
+                        <li> <a href="https://easychair.org/conferences/?conf=kdbc2023"><i class="fa fa-sign-in fa-fw"></i> 논문 접수</a> </li>
+                        <li> <a href="registration.html"><i class="fa fa-pencil-square-o fa-fw"></i> 사전 등록</a> </li>
+                        <li> <a href="venue.html"><i class="fa fa-university fa-fw"></i> 대회 장소</a> </li>
+                        <li> <a href="accommodation.html"><i class="fa fa-building fa-fw"></i> 숙박 정보</a> </li>
+                        <li> <a href="tourInfo.html"><i class="fa fa-map-marker fa-fw"></i> 관광 정보</a> </li>
+                        <li> <a href="contactUs.html"><i class="fa fa-phone fa-fw"></i> 연락처</a> </li>
+                    </ul>
+                </div>
+                <!-- /.sidebar-collapse -->
+            </div>
+            <!-- /.navbar-static-side -->
+        </nav>
+        <div id="page-wrapper">
+            <!--
+        <div class="row">
+            <div class="col-lg-12">
+		    <h3 class="page-header">프로그램 (Program)</h3>
+            </div>
+			<h3>TBA</h3>
+        </div>
+		-->
+            <div class="row">
+                <div class="col-lg-12">
+                    <h3 class="page-header">프로그램 (Program)
+                        <!-- <a href="KDBC2021_Proceedings.pdf"><b>KDBC 2021 논문집(PDF)</b></a> -->
+                    </h3>
+                    <!-- <a href="KDBC2021_leaflet.pdf">KDBC 2021 리플렛 (PDF 파일)</a> -->
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <h4><b>Program at a glance</b></h4>
+                    <table class="table table-bordered dataTable text-center" style="vertical-align:middle;">
+                        <colgroup span="1">
+                            <col span="1" width="8%">
+                            </col>
+                            <col span="1" width="23%">
+                            </col>
+                            <col span="1" width="23%">
+                            </col>
+                            <col span="1" width="23%">
+                            </col>
+                            <col span="1" width="23%">
+                            </col>
+                        </colgroup>
+                        <tr bgcolor="#FAF4C0">
+                            <td colspan="5">
+                                <center><b>첫째 날: 2023년 11월 03일(금) <br> -웨스틴 조선 부산-</b></center>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th style="text-align:center;">시간</th>
+                            <th style="text-align:center;">Session A<br>(Rose)</th>
+                            <th style="text-align:center;">Session B<br>(Lilac)</th>
+                            <th style="text-align:center;">Session C<br>(Junior Ballroom)</th>
+                            <th style="text-align:center;">Session D<br>(Tulip)</th>
+                        </tr>
+                        <tr>
+                            <td style="vertical-align:middle;">12:00 ~ 13:00</td>
+                            <td bgcolor="#FFD9EC" colspan="4"><b>등록</b></td>
+                        </tr>
+                        <tr>
+                            <td style="vertical-align:middle;">13:00 ~ 14:20</td>
+                            <td bgcolor="#B5B2FF"><b>Session 1A</b><br> (Graph Databases) <br>좌장: 서영균 (경북대)</td>
+                            <td bgcolor="#B5B2FF"><b>Session 1B</b><br> (Deep Learning(1)) <br>좌장: 이기용 (숙명여대)</td>
+                            <td bgcolor="#B5B2FF"><b>Session 1C</b><br> (Frameworks) <br>좌장: 임성수 (충남대)</td>
+                            <td bgcolor="#B5B2FF"><b>Industry Session (closed session)</b><br></td>
+                        </tr>
+                        <tr>
+                            <td>14:20 ~ 14:30</td>
+                            <td colspan="4">휴식 (10분)</td>
+                        </tr>
+                        <tr>
+                            <td style="vertical-align:middle;">14:30 ~ 15:50</td>
+                            <td bgcolor="#B5B2FF"><b>Session 2A</b><br> (Deep Learning(2)) <br>좌장: 이수안 (세명대)</td>
+                            <td bgcolor="#B5B2FF"><b>Session 2B</b><br> (Indexing & Search) <br>좌장: 김일주 (명지대)</td>
+                            <td bgcolor="#B5B2FF"><b>Session 2C</b><br> (Language Model) <br>좌장: 정연돈 (고려대)</td>
+                            <td bgcolor="#B5B2FF"><b>Session 2D</b><br> (Database Applications(1)) <br>좌장: 임선영 (배재대)</td>
+                        </tr>
+                        <tr>
+                            <td>15:50 ~ 16:10</td>
+                            <td colspan="4" bgcolor="#CCD9EC">Coffee Break (20분) <br></td>
+                        </tr>
+                        <tr>
+                            <td style="vertical-align:middle;">16:10 ~ 16:20</td>
+                            <td bgcolor="#F5C29E" colspan="4"><b>개회식</b><br>
+                                개회사 : 권준호 교수 (KDBC 2023 조직위원장)<br>
+                                환영사 : 황인준 교수 (데이터베이스소사이어티 회장) <br>
+                                장소: Junior Ballroom
+                                <br />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="vertical-align:middle;">16:20 ~ 17:00</td>
+                            <td bgcolor="#FFD9EC" colspan="4"><b>기조 연설</b><br><b>초거대 AI 시대의 대학의 역할과 새로운 인재상</b>
+                                <br>김영국 교수 (충남대학교)<br> 좌장: 황인준 교수&nbsp;|&nbsp; 장소: Junior Ballroom
+                                <br />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="vertical-align:middle;">17:00 ~ 17:40</td>
+                            <td bgcolor="#D4F4FA" colspan="4"><b>초청 강연</b><br><b>언어모델 증강과 데이터베이스</b>
+                                <br>황승원 교수 (서울대학교)<br> 좌장: 노웅기 교수&nbsp;|&nbsp; 장소: Junior Ballroom
+                                <br />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>17:40 ~ 18:10</td>
+                            <td bgcolor="EAEAEA" colspan="4">데이터베이스소사이어티 이사회<br>장소: Junior Ballroom</td>
+                        </tr>
+                        <tr>
+                            <td>18:10 ~ 20:00</td>
+                            <td bgcolor="#FF9090" colspan="4"><b>저녁만찬 (축사, 시상식 포함)</b><br>
+                                축사 : 이원준 교수 (한국정보과학회 회장)<br>
+                                장소: Banquet Rooms(Rose, Lilac, Tulip, Cosmos)
+                                <br />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="5"> </td>
+                        </tr>
+                        <tr bgcolor="#FAF4C0">
+                            <td colspan="5"><b>둘째 날: 2023년 11월 04일(토)<br>-부경대학교-</b></td>
+                        </tr>
+                        <tr>
+                            <th style="text-align:center;">시간</th>
+                            <th colspan="2" style="text-align:center;">Session A<br>(향파관(A15) 306호)</th>
+                            <th colspan="2" style="text-align:center;">Session B<br>(향파관(A15) 307호)</th>
+                        </tr>
+                        <tr>
+                            <td style="vertical-align:middle;">09:00 ~ 10:20</td>
+                            <td colspan="2" bgcolor="#B5B2FF"><b>Session 3A</b><br> (Recommendation) <br>좌장: 권준호 (부산대)</td>
+                            <td colspan="2" bgcolor="#B5B2FF"><b>Session 3B</b><br> (Database Applications(2)) <br>좌장: 황인준 (고려대)</td>
+                        </tr>
+                        <tr>
+                            <td>10:20 ~ 10:30</td>
+                            <td colspan="4">Coffee Break (10분)</td>
+                        </tr>
+                        <tr>
+                            <td style="vertical-align:middle;">10:30 ~ 11:30</td>
+                            <td colspan="2" bgcolor="#B5B2FF"><b>Session 4A</b><br> (Performance) <br>좌장: 송하주 (부경대)</td>
+                            <td colspan="2" bgcolor="#B5B2FF"><b>Session 4B</b><br> (Query Language) <br>좌장: 노웅기 (가천대)</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <br /><br><br>
+            <div class="col-lg-12">
+                <li><b>구두 발표: 20분(발표 15분, 질의응답 5분)</b></li>
+            </div>
+            <br />
+            <hr>
+            <br />
+            <div class="row">
+                <div class="col-lg-12">
+                    <h4><b>상세 프로그램</b></h4>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <h4 class="text-center"><b>첫째 날: 2023년 11월 03일(금)</b></h4>
+                    <hr class="soften">
+                    <div class="panel" style="border-color:#FFD9EC;">
+                        <div class="panel-heading" style="background-color:#FFD9EC;">
+                            <span class="pull-right fontShadow">
+                                <em>12:00 ~ 13:00, 2023년 11월 03일(금)</em></br>
+                            </span>
+                            <b>등록</b>
+                        </div>
+                    </div>
+                    <div class="panel" style="border-color:#B5B2FF;">
+                        <div class="panel-heading" style="background-color: #B5B2FF;">
+                            <span class="pull-right fontShadow">
+                                <em>13:00 ~ 14:20, 2023년 11월 03일(금)</em></br>
+                                <em>웨스틴 조선 부산 (Rose)</em>
+                            </span>
+                            <b>Session 1A : Graph Databases</b><br>좌장: 서영균 (경북대)
+                            <br />
+                        </div>
+                        <div class="panel-body">
+                            <li><b>Enhancing Node Classification in Graphs through Mapping-Based Contrastive Learning &nbsp;<font style="color:red;">(우수논문)</font></b><br />
+                                Tangina Sultana, Delowar Hossain, Golam Morshed, Young-Koo Lee</li>
+                            <br />
+                            <li><b>GPU 환경에서 지역성을 고려한 효율적인 그래프 분할 기법</b><br />
+                                이현병, 송상호, 복경수, 임종태, 김상혁, 크리스토퍼, 전종우, 황현중, 차동현, 최지현, 유재수</li>
+                            <br />
+                            <li><b>방향 그래프 임베딩을 위한 싱글벡터 방법과 더블벡터 방법의 비교 평가</b><br />
+                                류진수, Masoud Rehyani Hamedani, 김상욱</li>
+                            <br />
+                            <li><b>그래프 합성곱 신경망이 학습한 노드 표현을 노드 특징이 변화했을 때 빠르게 갱신하는 방법</b><br />
+                                송연주, 이기용</li>
+                        </div>
+                    </div>
+                    <div class="panel" style="border-color:#B5B2FF;">
+                        <div class="panel-heading" style="background-color: #B5B2FF;">
+                            <span class="pull-right fontShadow">
+                                <em>13:00 ~ 14:20, 2023년 11월 03일(금)</em></br>
+                                <em>웨스틴 조선 부산 (Lilac)</em>
+                            </span>
+                            <b>Session 1B : Deep Learning(1)</b><br>좌장: 이기용 (숙명여대)
+                            <br />
+                        </div>
+                        <div class="panel-body">
+                            <li><b>디코더 모델을 위한 어댑터 퓨전 기반 머신 언러닝 방법론 </b><br />
+                                김민성, 백인철, 정연돈</li>
+                            <br />
+                            <li><b>정밀한 휴먼 디지털 트윈 구현을 위한 의료 영상의 초해상화 </b><br />
+                                이재용, 양동헌, 이경하</li>
+                            <br />
+                            <li><b>심박변이도 데이터를 활용한 수면 무호흡증 검출 기법 &nbsp;<font style="color:red;">(우수논문)</font></b><br />
+                                김형빈, 김민수, 정연돈</li>
+                            <br>
+                            <li><b>불균형한 감귤 병해충 데이터 분류를 위한 딥러닝 기반 오버샘플링 기법</b><br />
+                                이동연, 남민지, 하정민, 박진수, 김영국, 박종석</li>
+                        </div>
+                    </div>
+                    <div class="panel" style="border-color:#B5B2FF;">
+                        <div class="panel-heading" style="background-color: #B5B2FF;">
+                            <span class="pull-right fontShadow">
+                                <em>13:00 ~ 14:20, 2023년 11월 03일(금)</em></br>
+                                <em>웨스틴 조선 부산 (Junior Ballroom)</em>
+                            </span>
+                            <b>Session 1C : Frameworks</b><br>좌장: 임성수 (충남대)
+                            <br />
+                        </div>
+                        <div class="panel-body">
+                            <li><b>블록체인을 이용한 효과적인 IoT 장치 관리 방법</b><br />
+                                유동현, 정우창, 박찬익</li>
+                            <br />
+                            <li><b>비동기 GPS 경로데이터를 위한 변조 기반 익명화 방법</b><br />
+                                도유진, 장덕연, 정연돈</li>
+                            <br />
+                            <li><b>클래스 불균형 문제에 대한 거리 기반 가중치 k-평균 클러스터링 기법</b><br />
+                                신혜수, 이기용</li>
+                            <br />
+                            <li><b>카프카 스트림즈를 이용한 실시간 IoT 데이터 샘플링 시스템 &nbsp;<font style="color:red;">(우수논문)</font></b><br />
+                                장호준, 길명선, 문양세</li>
+                        </div>
+                    </div>
+                    <div class="panel" style="border-color:#CCD9EC;">
+                        <div class="panel-heading" style="border-color:#CCD9EC;">
+                            <span class="pull-right fontShadow">
+                                <em>14:20 ~ 14:30, 2023년 11월 03일(금)</em>
+                            </span>
+                            <b>휴식 (10분)</b>
+                        </div>
+                    </div>
+                    <div class="panel" style="border-color:#B5B2FF;">
+                        <div class="panel-heading" style="background-color: #B5B2FF;">
+                            <span class="pull-right fontShadow">
+                                <em>14:30 ~ 15:50, 2023년 11월 03일(금)</em></br>
+                                <em>웨스틴 조선 부산 (Rose)</em>
+                            </span>
+                            <b>Session 2A : Deep Learning(2)</b><br>좌장: 이수안 (세명대)
+                            <br />
+                        </div>
+                        <div class="panel-body">
+                            <li><b>EMR 데이터를 활용한 딥러닝 기반 간호감시 의사결정 시스템에 대한 연구</b><br />
+                                김세영, 김대호, 정옥란</li>
+                            <br />
+                            <li><b>MuFaSA: 다단계 태양광 발전량 예측을 위한 멀티-퓨전 딥러닝과 셀프-어텐션 &nbsp;<font style="color:red;">(우수논문)</font></b><br />
+                                소다영, 오진영, 문지훈</li>
+                            <br />
+                            <li><b>단일 리드 심전도 데이터 기반 수면 무호흡 분류 최적화</b><br />
+                                박예진, 서영균, 김지영</li>
+                            <br />
+                            <li><b>Pix2Pix를 이용한 수중 이미지 생성 결과 비교 분석</b><br />
+                                나승주, 정수연, 임선영</li>
+                        </div>
+                    </div>
+                    <div class="panel" style="border-color:#B5B2FF;">
+                        <div class="panel-heading" style="background-color: #B5B2FF;">
+                            <span class="pull-right fontShadow">
+                                <em>14:30 ~ 15:50, 2023년 11월 03일(금)</em></br>
+                                <em>웨스틴 조선 부산 (Lilac)</em>
+                            </span>
+                            <b>Session 2B : Indexing & Search</b><br>좌장: 김일주 (명지대)
+                            <br />
+                        </div>
+                        <div class="panel-body">
+                            <li><b>문서 검색 엔진의 성능 향상을 위한 신조어 사전 구축 기법</b><br />
+                                박성우, 최문봉, 김대훈, 정종균, 황인준</li>
+                            <br />
+                            <li><b>시각장애인의 안전한 보행을 위한 횡단보도 탐지 모델 연구</b><br />
+                                김준수, 신원지, 이세영, 김현중, 이혁</li>
+                            <br />
+                            <li><b>IoT 데이터에 대한 효율적인 시공간 범위 질의 처리를 위한 시간 접두사를 이용한 트라이 기반 인덱싱 기법</b><br />
+                                윤주영, 장영우, 서영균</li>
+                            <br />
+                            <li><b>Spark에서 Learned Index를 활용한 효율적인 고차원 색인 기법</b><br />
+                                이현병, 송상호, 복경수, 임종태, 최도진, 유재수</li>
+                        </div>
+                    </div>
+                    <div class="panel" style="border-color:#B5B2FF;">
+                        <div class="panel-heading" style="background-color: #B5B2FF;">
+                            <span class="pull-right fontShadow">
+                                <em>14:30 ~ 15:50, 2023년 11월 03일(금)</em></br>
+                                <em>웨스틴 조선 부산 (Junior Ballroom)</em>
+                            </span>
+                            <b>Session 2C : Language Model</b><br>좌장: 정연돈 (고려대)
+                            <br />
+                        </div>
+                        <div class="panel-body">
+                            <li><b>거대언어모델 기반의 동의어 사전 구축 및 성능 평가 방안</b><br />
+                                전휘준, 심종화, 김대훈, 정종균, 황인준</li>
+                            <br />
+                            <li><b>사전학습 언어모델을 이용한 법인세 조세심판 결정 예측 모델 연구</b><br />
+                                배은형, 박소영, 임성수</li>
+                            <br />
+                            <li><b>지식 증류를 활용한 효율적인 프롬프트 압축 방법</b><br />
+                                원현식, 이종혁, 권오준, 김강민</li>
+                            <br />
+                            <li><b>SciLinkBERT: 과학 분야 텍스트 이해를 위한 인용 정보를 활용한 언어모델 &nbsp;<font style="color:red;">(우수논문)</font></b><br />
+                                유주연, 양동헌, 이경하</li>
+                        </div>
+                    </div>
+                    <div class="panel" style="border-color:#B5B2FF;">
+                        <div class="panel-heading" style="background-color: #B5B2FF;">
+                            <span class="pull-right fontShadow">
+                                <em>14:30 ~ 15:50, 2023년 11월 03일(금)</em></br>
+                                <em>웨스틴 조선 부산 (Tulip)</em>
+                            </span>
+                            <b>Session 2D : Database Applications(1)</b><br>좌장: 임선영 (배재대)
+                            <br />
+                        </div>
+                        <div class="panel-body">
+                            <li><b>과학기술정보를 활용한 학술 네트워크 구성 및 분석</b><br />
+                                임찬욱, 강남규</li>
+                            <br />
+                            <li><b>육군 온나라 전자 문서 메타데이터 설정 자동화 시스템</b><br />
+                                송가영, 정기정, 정연돈</li>
+                            <br />
+                            <li><b>No-Code AI 기반 개인화된 의료서비스 프레임워크</b><br />
+                                고효진, 김민지, 이하영, 정옥란</li>
+                            <br />
+                            <li><b>고객의 보험 가입 유도를 위한 방법론 제안: 개인의 인구통계적, 유전적, 생활습관적 특성 기반 주요 질병의 유병률 예측</b><br />
+                                정래현, 김일주</li>
+                        </div>
+                    </div>
+                    <div class="panel" style="border-color:#CCD9EC;">
+                        <div class="panel-heading" style="background-color:#CCD9EC;">
+                            <span class="pull-right fontShadow">
+                                <em>15:50 ~ 16:10, 2023년 11월 03일(금)</em><br>
+                            </span>
+                            <b>Coffee Break (20분)</b>
+                        </div>
+                    </div>
+                    <div class="panel" style="border-color:#FFD9EC;">
+                        <div class="panel-heading" style="background-color: #F5C29E;">
+                            <span class="pull-right fontShadow">
+                                <em>16:10 ~ 16:20, 2023년 11월 03일(금)</em><br>
+                                <em>웨스틴 조선 부산 (Junior Ballroom)</em>
+                            </span>
+                            <b>개회식</b><br>
+                            개회사 : 권준호 교수 (KDBC 2023 조직위원장)<br>
+                            환영사 : 황인준 교수 (데이터베이스소사이어티 회장) <br>
+                        </div>
+                    </div>
+                    <div class="panel" style="border-color:#FFD9EC;">
+                        <div class="panel-heading" style="background-color: #FFD9EC;">
+                            <span class="pull-right fontShadow">
+                                <em>16:20 ~ 17:00, 2023년 11월 03일(금)</em><br>
+                                <em>웨스틴 조선 부산 (Junior Ballroom)</em>
+                            </span>
+                            <b>기조 연설</b><br>좌장 : 황인준 교수 (고려대)
+                            <br />
+                        </div>
+                        <div class="panel-body">
+                            <b>초거대 AI 시대의 대학의 역할과 새로운 인재상</b><br />
+                            김영국 교수 (충남대학교)<br />
+                        </div>
+                    </div>
+                    <div class="panel" style="border-color:#D4F4FA;">
+                        <div class="panel-heading" style="background-color: #D4F4FA;">
+                            <span class="pull-right fontShadow">
+                                <em>17:00 ~ 17:40, 2023년 11월 03일(금)</em><br>
+                                <em>웨스틴 조선 부산 (Junior Ballroom)</em>
+                            </span>
+                            <b>초청 강연</b><br>좌장 : 노웅기 교수 (가천대)
+                            <br />
+                        </div>
+                        <div class="panel-body">
+                            <b>언어모델 증강과 데이터베이스</b><br />
+                            황승원 교수 (서울대학교)<br />
+                        </div>
+                    </div>
+                    <div class="panel" style="border-color:#EAEAEA;">
+                        <div class="panel-heading" style="background-color: #EAEAEA;">
+                            <span class="pull-right fontShadow">
+                                <em>17:40 ~ 18:10, 2023년 11월 03일(금)</em><br>
+                                <em>웨스틴 조선 부산 (Junior Ballroom)</em>
+                            </span>
+                            <b>개회식</b><br>
+                            <br>
+                        </div>
+                    </div>
+                    <div class="panel" style="border-color:#FF9090;">
+                        <div class="panel-heading" style="background-color: #FF9090;">
+                            <span class="pull-right fontShadow">
+                                <em>18:10 ~ 20:00, 2023년 11월 03일(금)</em><br>
+                                <em>웨스틴 조선 부산 (Banquet Rooms)</em>
+                            </span>
+                            <b>저녁만찬 (축사, 시상식 포함)</b><br>
+                            축사 : 이원준 교수 (한국정보과학회 회장)
+                            <br />
+                        </div>
+                    </div>
+                    <br />
+                    <br />
+                    <hr>
+                    <h4 class="text-center"><b>둘째 날: 2023년 11월 04일(토)</b></h4>
+                    <hr class="soften">
+                    <div class="panel" style="border-color:#B5B2FF;">
+                        <div class="panel-heading" style="background-color: #B5B2FF;">
+                            <span class="pull-right fontShadow">
+                                <em>09:00 ~ 10:20, 2023년 11월 04일(토)</em></br>
+                                <em>부경대학교 향파관(A15) 306호</em>
+                            </span>
+                            <b>Session 3A : Recommendation</b><br>좌장: 권준호 (부산대)
+                            <br />
+                        </div>
+                        <div class="panel-body">
+                            <li><b>안전 지수 기반 보행자 경로 추천 기법</b><br />
+                                박민철, 박민수, 서재민, 안진수, 최도진</li>
+                            <br />
+                            <li><b>빅데이터 기반 제품 특성 정보를 활용한 추천시스템 개발</b><br />
+                                신상은, 천창범, 유재영, 김영민</li>
+                            <br />
+                            <li><b>머신러닝 기반 음식구성을 통한 개인 맞춤형 식단 구성</b><br />
+                                김동연, 이동준, 최민석, 송하주</li>
+                            <br />
+                            <li><b>긍정적인 관계와 부정적인 관계를 모두 활용하는 GCN 기반의 협업 필터링 추천 방법들의 정확도 분석</b><br />
+                                정동호, 김태리, 김상욱</li>
+                        </div>
+                    </div>
+                    <div class="panel" style="border-color:#B5B2FF;">
+                        <div class="panel-heading" style="background-color: #B5B2FF;">
+                            <span class="pull-right fontShadow">
+                                <em>09:00 ~ 10:20, 2023년 11월 04일(토)</em></br>
+                                <em>부경대학교 향파관(A15) 307호</em>
+                            </span>
+                            <b>Session 3B : Database Applications(2)</b><br>좌장: 황인준 (고려대)
+                            <br />
+                        </div>
+                        <div class="panel-body">
+                            <li><b>유해화학물질 사업장 현장안전사고 관리 데이터베이스 구축에 관한 연구</b><br />
+                                하재현, 이상오, 이태성, 박연수, 한욱신</li>
+                            <br />
+                            <li><b>로지스틱 회귀 기반 청소년 자살성 예측 연구</b><br />
+                                홍성초, 임선영</li>
+                            <br />
+                            <li><b>군집화를 통한 시계열 에어컨 사용 패턴 분류 모델 탐색</b><br />
+                                서하린, 서재완, 김홍현, 한동우, 정인욱, 서영균</li>
+                            <br />
+                            <li><b>경로 이미지 기반 주요 궤적 지점 및 궤적 데이터 생성 기법</b><br />
+                                변경수, 이병영, 권준호</li>
+                        </div>
+                    </div>
+                    <div class="panel" style="border-color:#CCD9EC;">
+                        <div class="panel-heading" style="border-color:#CCD9EC;">
+                            <span class="pull-right fontShadow">
+                                <em>10:20 ~ 10:30, 2023년 11월 04일(토)</em>
+                            </span>
+                            <b>Coffee Break (10분)</b>
+                        </div>
+                    </div>
+                    <div class="panel" style="border-color:#B5B2FF;">
+                        <div class="panel-heading" style="background-color: #B5B2FF;">
+                            <span class="pull-right fontShadow">
+                                <em>10:30 ~ 11:30, 2023년 11월 04일(토)</em></br>
+                                <em>부경대학교 향파관(A15) 306호</em>
+                            </span>
+                            <b>Session 4A : Performance</b><br>좌장: 송하주 (부경대)
+                            <br />
+                        </div>
+                        <div class="panel-body">
+                            <li><b>파일 단편화에 따른 DuckDB 성능 오버헤드 분석</b><br />
+                                박세현, 류지원, 김지섭, 박종혁</li>
+                            <br />
+                            <li><b>HTAP 워크로드에서 언두페이지에 의한 버퍼 오염에 대한 분석</b><br />
+                                천세헌, 이보현, 이경식, 이상원, 엄영익</li>
+                            <br />
+                            <li><b>플래시 메모리 환경에서 MySQL/InnoDB 체크포인트 쓰기 감소에 따른 성능 분석 &nbsp;<font style="color:red;">(우수논문)</font></b><br />
+                                박근현, 이경식, 박종혁, 엄영익, 이상원</li>
+                            <br />
+                        </div>
+                    </div>
+                    <div class="panel" style="border-color:#B5B2FF;">
+                        <div class="panel-heading" style="background-color: #B5B2FF;">
+                            <span class="pull-right fontShadow">
+                                <em>10:30 ~ 11:30, 2023년 11월 04일(토)</em></br>
+                                <em>부경대학교 향파관(A15) 307호</em>
+                            </span>
+                            <b>Session 4B : Query Language</b><br>좌장: 노웅기 (가천대)
+                            <br />
+                        </div>
+                        <div class="panel-body">
+                            <li><b>CPS+ : Spark SQL에서 대화형 데이터 분석 애플리케이션의 자동 최적화 기법</b><br />
+                                조유정, 윤현식, 정연돈</li>
+                            <br />
+                            <li><b>대규모 실세계 스키마를 위한 2단계 인코더 기반 Text-to-SQL &nbsp;<font style="color:red;">(우수논문)</font></b><br />
+                                권운호, 이병덕, 이수안</li>
+                            <br />
+                            <li><b>SQL MNIST 기반 데이터 활용 머신러닝 구현</b><br />
+                                송영욱, 신건우, 이상원</li>
+                            <br />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h6 style="font-family: verdana, tahoma, arial;">
+                                <font color="#666666">
+                                    <h5><b>연락처</b></h5>
+                                    일반문의: 부산대학교 권준호 교수
+                                    <i class="fa fa-phone" aria-hidden="true"></i>051-510-3149 /
+                                    <i class="fa fa-envelope" aria-hidden="true"></i> <a href="mailto:jhkwon@pusan.ac.kr">jhkwon@pusan.ac.kr</a>
+                                    <br>
+                                    논문문의: 가천대학교 노웅기 교수
+                                    <i class="fa fa-phone" aria-hidden="true"></i>031-750-5349 /
+                                    <i class="fa fa-envelope" aria-hidden="true"></i> <a href="mailto:wkloh2@gachon.ac.kr">wkloh2@gachon.ac.kr</a>
+                                </font>
+                            </h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

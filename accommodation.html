@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+    <title>KDBC 2024</title>
+    <!-- Bootstrap Core CSS -->
+    <link href="./bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link href="./bootstrap.css" rel="stylesheet">
+    <!-- DataTables CSS -->
+    <link href="./dataTables.bootstrap.css" rel="stylesheet">
+    <!-- MetisMenu CSS -->
+    <link href="./metisMenu.min.css" rel="stylesheet">
+    <!-- Timeline CSS -->
+    <link href="./timeline.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="./sb-admin-2.css" rel="stylesheet">
+    <link href="./owl.carousel.css" rel="stylesheet">
+    <link href="./owl.theme.default.min.css" rel="stylesheet">
+    <link href="./custom.css" rel="stylesheet">
+    <!-- Custom Fonts -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <script src="./jquery.js"></script>
+    <script src="./jquery.validate.js"></script>
+    <script src="./custom.js"></script>
+</head>
+
+<body>
+    <script src="less.min.js" type="text/javascript"></script>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="bootstrap.min.js"></script>
+    <!-- Metis Menu Plugin JavaScript -->
+    <script src="metisMenu.min.js"></script>
+    <!-- Morris Charts JavaScript -->
+    <script src="raphael-min.js"></script>
+    <!-- Custom Theme JavaScript -->
+    <script src="sb-admin-2.js"></script>
+    <script src="owl.carousel.min.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function() {
+        $("#owl-demo").owlCarousel({
+            loop: true,
+            margin: 10,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                1000: {
+                    items: 3
+                },
+                600: {
+                    items: 2
+                }
+            },
+            responsiveClass: true
+        });
+    });
+    </script>
+    <div id="wrapper">
+        <!-- Navigation -->
+        <nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0; ">
+            <div class="navbar-header" style="height: 110px;">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html"><img src="images/logo.png"></a>
+            </div>
+            <!-- /.navbar-header -->
+            <div class="navbar-default sidebar" role="navigation">
+                <div class="navbar-collapse collapse" id="myNavbar">
+                    <ul class="nav" id="side-menu">
+                        <li style="border-top:1px solid #e7e7e7;"> <a href="index.html"><i class="fa fa-home fa-fw"></i> 홈</a> </li>
+                        <li> <a href="callForPapers.html"><i class="fa fa-file-text fa-fw"></i> 논문 모집</a> </li>
+                        <li> <a href="importantDates.html"><i class="fa fa-calendar fa-fw"></i> 주요 일정</a> </li>
+                        <li> <a href="organization.html"><i class="fa fa-group fa-fw"></i> 학술대회 위원회</a> </li>
+                        <li> <a href="keynote.html"><i class="fa fa-microphone fa-fw"></i> 기조 연설</a> </li>
+                        <li> <a href="invitedTalk.html"><i class="fa fa-microphone fa-fw"></i> 초청 강연</a> </li>
+                        <li> <a href="program.html"><i class="fa fa-check-square-o fa-fw"></i> 프로그램</a> </li>
+                        <li> <a href="proceedings.html"><i class="fa fa-check-square-o fa-fw"></i> 리플렛/프로시딩</a> </li>
+                        <li> <a href="https://easychair.org/conferences/?conf=kdbc2023"><i class="fa fa-sign-in fa-fw"></i> 논문 접수</a> </li>
+                        <li> <a href="registration.html"><i class="fa fa-pencil-square-o fa-fw"></i> 사전 등록</a> </li>
+                        <li> <a href="venue.html"><i class="fa fa-university fa-fw"></i> 대회 장소</a> </li>
+                        <li> <a href="accommodation.html"><i class="fa fa-building fa-fw"></i> 숙박 정보</a> </li>
+                        <li> <a href="tourInfo.html"><i class="fa fa-map-marker fa-fw"></i> 관광 정보</a> </li>
+                        <li> <a href="contactUs.html"><i class="fa fa-phone fa-fw"></i> 연락처</a> </li>
+                    </ul>
+                </div>
+                <!-- /.sidebar-collapse -->
+            </div>
+            <!-- /.navbar-static-side -->
+        </nav>
+        <script type="text/javascript">
+        $(document)
+            .ready(function() {
+                $("#owl-demo").owlCarousel({
+                    loop: true,
+                    margin: 10,
+                    responsive: {
+                        0: {
+                            items: 1
+                        },
+                        600: {
+                            items: 2
+                        },
+                        1000: {
+                            items: 3
+                        }
+                    },
+                    responsiveClass: true
+                });
+            });
+        </script>
+        <style>
+        th {
+            text-align: center;
+        }
+
+        table {
+            border-collapse: collapse;
+            border: 1px solid black;
+        }
+        </style>
+        <!-- /#page-wrapper -->
+        <div id="page-wrapper">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h3 class="page-header">숙박 정보 (Accomodation)</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading" style="background-color:#FFE5CC">
+                            <h4>Notice</h4>
+                            <h5><b> 제주도 휘닉스 아일랜드 근처 내용으로 교체 필요 </b></h5>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4><b>이비스 버젯 앰배서더</b></h4>
+                        </div>
+                        <div class="panel-body">
+                            <p>
+                                <img width="300" alt="" src="images/hotels/hotel01.jpg">
+                                <table border="1">
+                                    <colgroup span="1">
+                                        <col span="1" width="150px">
+                                        </col>
+                                        <col span="1">
+                                        </col>
+                                    </colgroup>
+                                    <tbody>
+                                        <tr>
+                                            <td style="text-align:center;background-color:LightGray"><b>주소</b></td>
+                                            <td>&nbsp;이비스 버젯 앰배서더 부산 해운대(부산 해운대구 해운대해변로209번길 8)</td>
+                                        </tr>
+                                        <tr>
+                                            <td style="text-align:center;background-color:LightGray"><b>홈페이지</b></td>
+                                            <td>&nbsp;<a href="https://hotels.naver.com/item/rates?hotelFileName=hotel%3AIbis_Budget_Ambassador_Busan_Haeundae&adultCnt=2&checkIn=2023-11-03&checkOut=2023-11-04&includeTax=false">링크1</a>
+                                                &nbsp;<a href="https://www.ambatel.com/ibisbudget/haeundae/ko/main.do">링크2</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="text-align:center;background-color:LightGray"><b>주변시설</b></td>
+                                            <td>&nbsp;부산 웨스틴조선호텔 학회 장소로부터 차로3분/도보 8분 내외 거리에 있습니다.&nbsp;</td>
+                                        </tr>
+                                        <tr>
+                                            <td style="text-align:center;background-color:LightGray"><b>요금</b></td>
+                                            <td>&nbsp;10만원(10월 조회기준)</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4><b>부산 신라스테이</b></h4>
+                        </div>
+                        <div class="panel-body">
+                            <p>
+                                <img width="300" alt="" src="images/hotels/hotel02.jpg">
+                                <table border="1">
+                                    <colgroup span="1">
+                                        <col span="1" width="150px">
+                                        </col>
+                                        <col span="1">
+                                        </col>
+                                    </colgroup>
+                                    <tbody>
+                                        <tr>
+                                            <td style="text-align:center;background-color:LightGray"><b>주소</b></td>
+                                            <td>&nbsp;부산 신라스테이(부산 해운대구 해운대로570번길 46)</td>
+                                        </tr>
+                                        <tr>
+                                            <td style="text-align:center;background-color:LightGray"><b>홈페이지</b></td>
+                                            <td>&nbsp;<a href="https://hotels.naver.com/item/rates?hotelFileName=hotel%3AShilla_Stay_Haeundae&adultCnt=2&checkIn=2023-11-03&checkOut=2023-11-04&includeTax=false">링크1</a>
+                                                &nbsp;<a href="https://www.shillahotels.com/index.do">링크2</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="text-align:center;background-color:LightGray"><b>주변시설</b></td>
+                                            <td>&nbsp;부산 웨스틴조선호텔 학회 장소로부터 차로3분/도보 10분 내외 거리에 있습니다.&nbsp;</td>
+                                        </tr>
+                                        <tr>
+                                            <td style="text-align:center;background-color:LightGray"><b>요금</b></td>
+                                            <td>&nbsp;22만원(10월 조회기준)</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4><b>이비스 앰배서더 해운대</b></h4>
+                        </div>
+                        <div class="panel-body">
+                            <p>
+                                <img width="300" alt="" src="images/hotels/hotel03.jpg">
+                                <table border="1">
+                                    <colgroup span="1">
+                                        <col span="1" width="150px">
+                                        </col>
+                                        <col span="1">
+                                        </col>
+                                    </colgroup>
+                                    <tbody>
+                                        <tr>
+                                            <td style="text-align:center;background-color:LightGray"><b>주소</b></td>
+                                            <td>&nbsp;이비스 앰배서더 해운대(부산 해운대구 해운대해변로237번길 12)</td>
+                                        </tr>
+                                        <tr>
+                                            <td style="text-align:center;background-color:LightGray"><b>홈페이지</b></td>
+                                            <td>&nbsp;<a href="https://hotels.naver.com/item/rates?hotelFileName=hotel%3AIbis_Ambassador_Busan_Haeundae&adultCnt=2&checkIn=2023-11-03&checkOut=2023-11-04&includeTax=false">링크1</a>
+                                                &nbsp;<a href="https://www.ambatel.com/ibis/haeundae/ko/main.do">링크2</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="text-align:center;background-color:LightGray"><b>주변시설</b></td>
+                                            <td>&nbsp;부산 웨스틴조선호텔 학회 장소로부터 차로3분/도보 10분 내외 거리에 있습니다.&nbsp;</td>
+                                        </tr>
+                                        <tr>
+                                            <td style="text-align:center;background-color:LightGray"><b>요금</b></td>
+                                            <td>&nbsp;10만원(10월 조회기준)</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4><b>토요코인호텔 해운대2</b></h4>
+                        </div>
+                        <div class="panel-body">
+                            <p>
+                                <img width="300" alt="" src="images/hotels/hotel04.jpg">
+                                <table border="1">
+                                    <colgroup span="1">
+                                        <col span="1" width="150px">
+                                        </col>
+                                        <col span="1">
+                                        </col>
+                                    </colgroup>
+                                    <tbody>
+                                        <tr>
+                                            <td style="text-align:center;background-color:LightGray"><b>주소</b></td>
+                                            <td>&nbsp;토요코인호텔 해운대2(부산 해운대구 해운대해변로237번길 5)</td>
+                                        </tr>
+                                        <tr>
+                                            <td style="text-align:center;background-color:LightGray"><b>홈페이지</b></td>
+                                            <td>&nbsp;<a href="https://hotels.naver.com/item/rates?hotelFileName=hotel%3AToyoko_Inn_Busan_Haeundae_2&adultCnt=2&checkIn=2023-11-03&checkOut=2023-11-04&includeTax=false">링크1</a>
+                                                &nbsp;<a href="https://www.toyoko-inn.com/korea/search/result?lcl_id=ko&chck_in=2023/11/03&inn_date=1&rsrv_num=1&sel_ldgngPpl=1&sel_area=8&sel_area_txt=%ED%95%9C%EA%B5%AD&sel_htl=00256&rd_smk=&sel_room_clss_Id=&sel_prkng=&sel_cnfrnc=&sel_hrtfll_room=&sel_whlchr=&sel_bath=&sel_rstrnt=&srch_key_word=&lttd=&lngtd=&pgn=1&sel_dtl_cndtn=&prcssng_dvsn=dtl&">링크2</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="text-align:center;background-color:LightGray"><b>주변시설</b></td>
+                                            <td>&nbsp;부산 웨스틴조선호텔 학회 장소로부터 차로3분/도보 10분 내외 거리에 있습니다.&nbsp;</td>
+                                        </tr>
+                                        <tr>
+                                            <td style="text-align:center;background-color:LightGray"><b>요금</b></td>
+                                            <td>&nbsp;11만원(10월 조회기준)</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4><b>부산 라비드 아틀란 2</b></h4>
+                        </div>
+                        <div class="panel-body">
+                            <p>
+                                <img width="300" alt="" src="images/hotels/hotel05.jpg">
+                                <table border="1">
+                                    <colgroup span="1">
+                                        <col span="1" width="150px">
+                                        </col>
+                                        <col span="1">
+                                        </col>
+                                    </colgroup>
+                                    <tbody>
+                                        <tr>
+                                            <td style="text-align:center;background-color:LightGray"><b>주소</b></td>
+                                            <td>&nbsp;라비드 아틀란 2(부산 해운대구 구남로 37 라비드아틀란호텔 2)</td>
+                                        </tr>
+                                        <tr>
+                                            <td style="text-align:center;background-color:LightGray"><b>홈페이지</b></td>
+                                            <td>&nbsp;<a href="https://hotels.naver.com/item?hotelFileName=hotel%3ALavi_De_Atlan_Hotel_2&adultCnt=2&checkIn=2023-11-03&checkOut=2023-11-04&includeTax=false">링크1</a>
+                                                &nbsp;<a href="https://www.lavideatlanhotel2.com/">링크2</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="text-align:center;background-color:LightGray"><b>주변시설</b></td>
+                                            <td>&nbsp;부산 웨스틴조선호텔 학회 장소로부터 차로5분/도보 15분 내외 거리에 있습니다.&nbsp;</td>
+                                        </tr>
+                                        <tr>
+                                            <td style="text-align:center;background-color:LightGray"><b>요금</b></td>
+                                            <td>&nbsp;10만원(10월 조회기준)</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4><b>파라다이스 호텔 부산</b></h4>
+                        </div>
+                        <div class="panel-body">
+                            <p>
+                                <img width="300" alt="" src="images/hotels/hotel06.jpg">
+                                <table border="1">
+                                    <colgroup span="1">
+                                        <col span="1" width="150px">
+                                        </col>
+                                        <col span="1">
+                                        </col>
+                                    </colgroup>
+                                    <tbody>
+                                        <tr>
+                                            <td style="text-align:center;background-color:LightGray"><b>주소</b></td>
+                                            <td>&nbsp;파라다이스 호텔 부산(부산 해운대구 해운대해변로 296)</td>
+                                        </tr>
+                                        <tr>
+                                            <td style="text-align:center;background-color:LightGray"><b>홈페이지</b></td>
+                                            <td>&nbsp;<a href="https://hotels.naver.com/item?hotelFileName=hotel%3AParadise_Hotel_Busan&adultCnt=2&checkIn=2023-11-03&checkOut=2023-11-04&includeTax=false">링크1</a>
+                                                &nbsp;<a href="https://www.busanparadisehotel.co.kr/front">링크2</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="text-align:center;background-color:LightGray"><b>주변시설</b></td>
+                                            <td>&nbsp;부산 웨스틴조선호텔 학회 장소로부터 차로5분/도보 20분 내외 거리에 있습니다.&nbsp;</td>
+                                        </tr>
+                                        <tr>
+                                            <td style="text-align:center;background-color:LightGray"><b>요금</b></td>
+                                            <td>&nbsp;30만원(10월 조회기준)</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4><b>그랜드 조선 부산</b></h4>
+                        </div>
+                        <div class="panel-body">
+                            <p>
+                                <img width="300" alt="" src="images/hotels/hotel07.jpg">
+                                <table border="1">
+                                    <colgroup span="1">
+                                        <col span="1" width="150px">
+                                        </col>
+                                        <col span="1">
+                                        </col>
+                                    </colgroup>
+                                    <tbody>
+                                        <tr>
+                                            <td style="text-align:center;background-color:LightGray"><b>주소</b></td>
+                                            <td>&nbsp;그랜드 조선 부산(부산 해운대구 해운대해변로 292)</td>
+                                        </tr>
+                                        <tr>
+                                            <td style="text-align:center;background-color:LightGray"><b>홈페이지</b></td>
+                                            <td>&nbsp;<a href="https://hotels.naver.com/item?hotelFileName=hotel%3AGrand_Josun_Busan&adultCnt=2&checkIn=2023-11-03&checkOut=2023-11-04&includeTax=false">링크1</a>
+                                                &nbsp;<a href="https://gjb.josunhotel.com/main.do">링크2</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="text-align:center;background-color:LightGray"><b>주변시설</b></td>
+                                            <td>&nbsp;부산 웨스틴조선호텔 학회 장소로부터 차로5분/도보 20분 내외 거리에 있습니다.&nbsp;</td>
+                                        </tr>
+                                        <tr>
+                                            <td style="text-align:center;background-color:LightGray"><b>요금</b></td>
+                                            <td>&nbsp;30만원(10월 조회기준)</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4><b>페어필드 바이 메리어트 부산</b></h4>
+                        </div>
+                        <div class="panel-body">
+                            <p>
+                                <img width="300" alt="" src="images/hotels/hotel08.jpg">
+                                <table border="1">
+                                    <colgroup span="1">
+                                        <col span="1" width="150px">
+                                        </col>
+                                        <col span="1">
+                                        </col>
+                                    </colgroup>
+                                    <tbody>
+                                        <tr>
+                                            <td style="text-align:center;background-color:LightGray"><b>주소</b></td>
+                                            <td>&nbsp;페어필드 바이 메리어트 부산(부산 해운대구 해운대해변로 314)</td>
+                                        </tr>
+                                        <tr>
+                                            <td style="text-align:center;background-color:LightGray"><b>홈페이지</b></td>
+                                            <td>&nbsp;<a href="https://hotels.naver.com/item?hotelFileName=hotel%3AFairfield_by_Marriott_Busan&adultCnt=2&checkIn=2023-11-03&checkOut=2023-11-04&includeTax=false">링크1</a>
+                                                &nbsp;<a href="https://www.marriott.com/ko/hotels/pusfi-fairfield-busan/overview/">링크2</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="text-align:center;background-color:LightGray"><b>주변시설</b></td>
+                                            <td>&nbsp;부산 웨스틴조선호텔 학회 장소로부터 차로10분/도보 20분 내외 거리에 있습니다.&nbsp;</td>
+                                        </tr>
+                                        <tr>
+                                            <td style="text-align:center;background-color:LightGray"><b>요금</b></td>
+                                            <td>&nbsp;12만원(10월 조회기준)</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4><b>펠릭스 호텔 바이 STX</b></h4>
+                        </div>
+                        <div class="panel-body">
+                            <p>
+                                <img width="300" alt="" src="images/hotels/hotel09.jpg">
+                                <table border="1">
+                                    <colgroup span="1">
+                                        <col span="1" width="150px">
+                                        </col>
+                                        <col span="1">
+                                        </col>
+                                    </colgroup>
+                                    <tbody>
+                                        <tr>
+                                            <td style="text-align:center;background-color:LightGray"><b>주소</b></td>
+                                            <td>&nbsp;펠릭스 호텔 바이 STX(부산 해운대구 해운대로 620)</td>
+                                        </tr>
+                                        <tr>
+                                            <td style="text-align:center;background-color:LightGray"><b>홈페이지</b></td>
+                                            <td>&nbsp;<a href="https://hotels.naver.com/item?hotelFileName=hotel%3AFelix_Hotel_by_STX&adultCnt=2&checkIn=2023-11-03&checkOut=2023-11-04&includeTax=false">링크1</a>
+                                                &nbsp;<a href="https://felixbystx.com/">링크2</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="text-align:center;background-color:LightGray"><b>주변시설</b></td>
+                                            <td>&nbsp;부산 웨스틴조선호텔 학회 장소로부터 차로10분/도보 20분 내외 거리에 있습니다.&nbsp;</td>
+                                        </tr>
+                                        <tr>
+                                            <td style="text-align:center;background-color:LightGray"><b>요금</b></td>
+                                            <td>&nbsp;10만원(10월 조회기준)</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4><b>라마다 앙코르 바이 윈덤 부산 해운대</b></h4>
+                        </div>
+                        <div class="panel-body">
+                            <p>
+                                <img width="300" alt="" src="images/hotels/hotel10.jpg">
+                                <table border="1">
+                                    <colgroup span="1">
+                                        <col span="1" width="150px">
+                                        </col>
+                                        <col span="1">
+                                        </col>
+                                    </colgroup>
+                                    <tbody>
+                                        <tr>
+                                            <td style="text-align:center;background-color:LightGray"><b>주소</b></td>
+                                            <td>&nbsp;라마다 부산 해운대(부산 해운대구 구남로 9 라마다앙코르 바이 윈덤 부산해운대)</td>
+                                        </tr>
+                                        <tr>
+                                            <td style="text-align:center;background-color:LightGray"><b>홈페이지</b></td>
+                                            <td>&nbsp;<a href="https://hotels.naver.com/item?hotelFileName=hotel%3ARamada_Encore_by_Wyndham_Busan_Haeundae&adultCnt=2&checkIn=2023-11-03&checkOut=2023-11-04&includeTax=false">링크1</a>
+                                                &nbsp;<a href="http://www.ramadaencorehaeundae.com/">링크2</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="text-align:center;background-color:LightGray"><b>주변시설</b></td>
+                                            <td>&nbsp;부산 웨스틴조선호텔 학회 장소로부터 차로7분/도보 20분 내외 거리에 있습니다.&nbsp;</td>
+                                        </tr>
+                                        <tr>
+                                            <td style="text-align:center;background-color:LightGray"><b>요금</b></td>
+                                            <td>&nbsp;9만원(10월 조회기준)</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4><b>해운대 블루스토리 호텔</b></h4>
+                        </div>
+                        <div class="panel-body">
+                            <p>
+                                <img width="300" alt="" src="images/hotels/hotel11.jpg">
+                                <table border="1">
+                                    <colgroup span="1">
+                                        <col span="1" width="150px">
+                                        </col>
+                                        <col span="1">
+                                        </col>
+                                    </colgroup>
+                                    <tbody>
+                                        <tr>
+                                            <td style="text-align:center;background-color:LightGray"><b>주소</b></td>
+                                            <td>&nbsp;해운대 블루스토리 호텔(부산 해운대구 해운대해변로237번길 11 해운대블루스토리호텔)</td>
+                                        </tr>
+                                        <tr>
+                                            <td style="text-align:center;background-color:LightGray"><b>홈페이지</b></td>
+                                            <td>&nbsp;<a href="https://hotels.naver.com/item?hotelFileName=hotel%3AHaeundae_Blue_Story&adultCnt=2&checkIn=2023-11-03&checkOut=2023-11-04&includeTax=false">링크1</a>
+                                                &nbsp;<a href="http://www.bluestoryhotel.com/">링크2</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="text-align:center;background-color:LightGray"><b>주변시설</b></td>
+                                            <td>&nbsp;부산 웨스틴조선호텔 학회 장소로부터 차로5분/도보 10분 내외 거리에 있습니다.&nbsp;</td>
+                                        </tr>
+                                        <tr>
+                                            <td style="text-align:center;background-color:LightGray"><b>요금</b></td>
+                                            <td>&nbsp;8만원(10월 조회기준)</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4><b>베스트 웨스턴 해운대 호텔</b></h4>
+                        </div>
+                        <div class="panel-body">
+                            <p>
+                                <img width="300" alt="" src="images/hotels/hotel12.jpg">
+                                <table border="1">
+                                    <colgroup span="1">
+                                        <col span="1" width="150px">
+                                        </col>
+                                        <col span="1">
+                                        </col>
+                                    </colgroup>
+                                    <tbody>
+                                        <tr>
+                                            <td style="text-align:center;background-color:LightGray"><b>주소</b></td>
+                                            <td>&nbsp;베스트 웨스턴 해운대 호텔(부산 해운대구 구남로 42)</td>
+                                        </tr>
+                                        <tr>
+                                            <td style="text-align:center;background-color:LightGray"><b>홈페이지</b></td>
+                                            <td>&nbsp;<a href="https://hotels.naver.com/item?hotelFileName=hotel%3ABest_Western_Haeundae_Hotel&adultCnt=2&checkIn=2023-11-03&checkOut=2023-11-04">링크1</a>
+                                                &nbsp;<a href="https://www.bwhaeundae.com/">링크2</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="text-align:center;background-color:LightGray"><b>주변시설</b></td>
+                                            <td>&nbsp;부산 웨스틴조선호텔 학회 장소로부터 차로5분/도보 15분 내외 거리에 있습니다.&nbsp;</td>
+                                        </tr>
+                                        <tr>
+                                            <td style="text-align:center;background-color:LightGray"><b>요금</b></td>
+                                            <td>&nbsp;12만원(10월 조회기준)</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4><b>파크 하얏트 부산</b></h4>
+                        </div>
+                        <div class="panel-body">
+                            <p>
+                                <img width="300" alt="" src="images/hotels/hotel13.jpg">
+                                <table border="1">
+                                    <colgroup span="1">
+                                        <col span="1" width="150px">
+                                        </col>
+                                        <col span="1">
+                                        </col>
+                                    </colgroup>
+                                    <tbody>
+                                        <tr>
+                                            <td style="text-align:center;background-color:LightGray"><b>주소</b></td>
+                                            <td>&nbsp;파크 하얏트 부산(부산 해운대구 마린시티1로 51)</td>
+                                        </tr>
+                                        <tr>
+                                            <td style="text-align:center;background-color:LightGray"><b>홈페이지</b></td>
+                                            <td>&nbsp;<a href="https://hotels.naver.com/item?hotelFileName=hotel%3APark_Hyatt_Busan&adultCnt=2&checkIn=2023-11-03&checkOut=2023-11-04&includeTax=false">링크1</a>
+                                                &nbsp;<a href="https://www.hyatt.com/ko-KR/hotel/south-korea/park-hyatt-busan/busph">링크2</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="text-align:center;background-color:LightGray"><b>주변시설</b></td>
+                                            <td>&nbsp;부산 웨스틴조선호텔 학회 장소로부터 차로5분/도보 20분 내외 거리에 있습니다.&nbsp;</td>
+                                        </tr>
+                                        <tr>
+                                            <td style="text-align:center;background-color:LightGray"><b>요금</b></td>
+                                            <td>&nbsp;37만원(10월 조회기준)</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4><b>켄트호텔 광안리 by 켄싱턴</b></h4>
+                        </div>
+                        <div class="panel-body">
+                            <p>
+                                <img width="300" alt="" src="images/hotels/hotel14.jpg">
+                                <table border="1">
+                                    <colgroup span="1">
+                                        <col span="1" width="150px">
+                                        </col>
+                                        <col span="1">
+                                        </col>
+                                    </colgroup>
+                                    <tbody>
+                                        <tr>
+                                            <td style="text-align:center;background-color:LightGray"><b>주소</b></td>
+                                            <td>&nbsp;켄트호텔 광안리 by 켄싱턴( 부산 수영구 광안해변로 229 켄트호텔)</td>
+                                        </tr>
+                                        <tr>
+                                            <td style="text-align:center;background-color:LightGray"><b>홈페이지</b></td>
+                                            <td>&nbsp;<a href="https://hotels.naver.com/item?hotelFileName=hotel%3AKent_Hotel_Gwangalli_by_Kensington&adultCnt=2&checkIn=2023-11-03&checkOut=2023-11-04&includeTax=false">링크1</a>
+                                                &nbsp;<a href="https://kensington.co.kr/hga">링크2</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="text-align:center;background-color:LightGray"><b>주변시설</b></td>
+                                            <td>&nbsp;부경대학교 학회 장소로부터 차로 10분/도보 40분 내외 거리에 있습니다.&nbsp;</td>
+                                        </tr>
+                                        <tr>
+                                            <td style="text-align:center;background-color:LightGray"><b>요금</b></td>
+                                            <td>&nbsp;13만원(10월 조회기준)</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12 text-center">
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h6 style="font-family: verdana, tahoma, arial;">
+                                        <font color="#666666">
+                                            <h5><b>연락처</b></h5>
+                                            일반문의: 한국과학기술정보연구원 이경하 박사
+                                            <i class="fa fa-phone" aria-hidden="true"></i>042-869-1642 / <i class="fa fa-envelope" aria-hidden="true"></i> <a href="mailto:kyongha@kisti.re.kr">kyongha@kisti.re.kr</a>
+                                            <br>
+                                            논문문의: 한양대학교 이동호 교수
+                                            <i class="fa fa-phone" aria-hidden="true"></i>031-400-5236 / <i class="fa fa-envelope" aria-hidden="true"></i> <a href="mailto:dhlee72@hanyang.ac.kr">dhlee72@hanyang.ac.kr</a>
+                                        </font>
+                                    </h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+</body>
+
+</html>
